@@ -86,7 +86,7 @@ function App() {
      <header className="h-12 lg:h-20 w-full text-black flex items-center justify-center space-x-5">
         <a className="navBtn" href={"https://www.linkedin.com/in/vladocpro/"}>LinkedIn</a>
         <a className="navBtn" href={"https://www.linkedin.com/in/vladocpro/"}>Github</a>
-        <a className="navBtn" href={""} download> CV</a>
+        <a className="navBtn" href={"../assets/Vladyslav Ovcharenko Resume.pdf"} download> CV</a>
      </header>
 
 
@@ -125,7 +125,7 @@ function App() {
 
 
          <div className="text-center mt-2 md:mt-6 lg:mt-9 text-lg md:text-3xl lg:text-4xl">
-            <h1>Projects</h1>
+            <h1 className="mb-3">Projects</h1>
             <div className="mt-5">
 
                <Carousel
