@@ -27,7 +27,7 @@ const skills = [
 const projects = {
    spotify: {
       title: "Spotify",
-      description: "Spotify clone using Typescript, React, Next, Spotify API",
+      description: "Spotify clone using Typescript, React, Redux, Next, Spotify API",
       picture: "../assets/Spotify.png",
       sourceCodeLink: "https://github.com/Vladocpro/Spotify"
    },
