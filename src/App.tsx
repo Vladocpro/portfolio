@@ -28,29 +28,34 @@ const projects = {
    spotify: {
       title: "Spotify",
       description: "Spotify clone using Typescript, React, Next, Spotify API",
-      picture: "../assets/Spotify.png"
+      picture: "../assets/Spotify.png",
+      sourceCodeLink: "https://github.com/Vladocpro/Spotify"
    },
    hotels: {
       title: "Hotels",
       description: "Developed a Hotels project using MERN, RESTful API, Redux, and JWT auth. It is an MPA designed to manage data about hotels. Users can either be a hotel resident or a hotel owner. Hotel owners have admin rights to create hotels, set hotel services, and prices, view statistics (charts and data tables) for hotel payments. Hotel residents can search for hotels, see their services, pay for them, and view payment history. The project also offers dark/light mode, localization for English and Ukrainian.",
       picture: "../assets/Hotels.png",
-      link: "https://hotels-os75.onrender.com"
+      link: "https://hotels-os75.onrender.com",
+      sourceCodeLink: "https://github.com/Vladocpro/Hotels"
    },
    chess: {
       title: "Chess",
       description: "Using Typescript, React, Redux, and OOP, I developed a single-player chess game. It features a GUI similar to chess.com, showing available squares to move, check and checkmate patterns,a history of moves, pawn promotion, a list of captured enemy pieces, and a timer.",
       picture: "../assets/Chess.png",
-      link: "https://chess-2j02.onrender.com"
+      link: "https://chess-2j02.onrender.com",
+      sourceCodeLink: "https://github.com/Vladocpro/Chess"
    },
    discord: {
       title: "Discord",
       description: "I created a Discord clone using MERN, RESTful API, WebSocket, WebRTC, Redux, and JWT auth. The Discord users are able to send invitations to each other with options to accept or decline the friendship request. It also updates the real-time friends' list and their online status, and enables them to create a room for a maximum of four people. Real-time communication is possible by messaging a friend and viewing the message history with dates, seeing friends' rooms, joining them, and communicating. Users who join somebody’s room can also share their screen, turn on/off their web camera, and microphone.",
-      picture: "../assets/Discord.png"
+      picture: "../assets/Discord.png",
+      sourceCodeLink: "https://github.com/Vladocpro/Discord"
    },
    blog: {
       title: "Blog",
       description: "Developed a simple Blog Project using React, Next, AWS Amplify, GraphQL. User can create, edit, post, write a comment. Upload a picture to the post using Amazon Web Services (AWS) Storage, enabling real-time posts updates through AWS Subscription. Utilizing AWS Authentication for Authentication.",
-      picture: "../assets/BlogAWS.png"
+      picture: "../assets/BlogAWS.png",
+      sourceCodeLink: "https://github.com/Vladocpro/BlogAWS"
    }
 }
 
