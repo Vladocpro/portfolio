@@ -90,7 +90,7 @@ function App() {
 
      <header className="h-12 lg:h-20 w-full text-black flex items-center justify-center space-x-5">
         <a className="navBtn" href={"https://www.linkedin.com/in/vladocpro/"}>LinkedIn</a>
-        <a className="navBtn" href={"https://www.linkedin.com/in/vladocpro/"}>Github</a>
+        <a className="navBtn" href={"https://github.com/Vladocpro"}>Github</a>
         <a className="navBtn" href={"../assets/Vladyslav Ovcharenko Resume.pdf"} download> CV</a>
      </header>
 
