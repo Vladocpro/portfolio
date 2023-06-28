@@ -25,37 +25,48 @@ const skills = [
 ];
 
 const projects = {
+   ecommerce: {
+      title: "Ecommerce Nike",
+      description: "Developed Ecommerce store, with Nike's fully responsive and interactive design, Stripe payments, User and Google authentications, Product Filtering. Favorites and Cart functionality, listing ordered products. Technologies: React, Next 13, Typescript, Prisma, Stripe, Webhook, Redux, Tailwind, Cloudinary, NextAuth(google).",
+      picture: "../assets/Ecommerce.jpg",
+      sourceCodeLink: "https://github.com/Vladocpro/ecommerce_nike",
+      morePictures:"https://www.linkedin.com/in/vladocpro/overlay/1635531340088/single-media-viewer/?profileId=ACoAAD_P-pEBtvGvfaskcMVOKYb8gLXSOENDZxU"
+   },
    spotify: {
       title: "Spotify",
       description: "Spotify clone using Typescript, React, Redux, Next, Spotify API",
       picture: "../assets/Spotify.png",
-      sourceCodeLink: "https://github.com/Vladocpro/Spotify"
+      sourceCodeLink: "https://github.com/Vladocpro/Spotify",
+      morePictures:"https://www.linkedin.com/in/vladocpro/overlay/1635522312776/single-media-viewer/?profileId=ACoAAD_P-pEBtvGvfaskcMVOKYb8gLXSOENDZxU"
    },
    hotels: {
       title: "Hotels",
-      description: "Developed a Hotels project using MERN, RESTful API, Redux, and JWT auth. It is an MPA designed to manage data about hotels. Users can either be a hotel resident or a hotel owner. Hotel owners have admin rights to create hotels, set hotel services, and prices, view statistics (charts and data tables) for hotel payments. Hotel residents can search for hotels, see their services, pay for them, and view payment history. The project also offers dark/light mode, localization for English and Ukrainian.",
+      description: "Developed a data management project for Hotel owners. Users can either be a hotel resident or a hotel owner. Hotel owners have admin rights to create hotels, set hotel services, and prices, view statistics (charts and data tables) for hotel payments. Hotel residents can search for hotels, see their services, pay for them, and view payment history. The project also offers dark/light mode, localization for English and Ukrainian.Technologies: React, Node, Express, MongoDB, Redux, MaterialUI.",
       picture: "../assets/Hotels.png",
-      link: "https://hotels-os75.onrender.com",
-      sourceCodeLink: "https://github.com/Vladocpro/Hotels"
+      sourceCodeLink: "https://github.com/Vladocpro/Hotels",
+      morePictures:"https://www.linkedin.com/in/vladocpro/overlay/1635518822129/single-media-viewer/?profileId=ACoAAD_P-pEBtvGvfaskcMVOKYb8gLXSOENDZxU"
    },
    chess: {
       title: "Chess",
       description: "Using Typescript, React, Redux, and OOP, I developed a single-player chess game. It features a GUI similar to chess.com, showing available squares to move, check and checkmate patterns,a history of moves, pawn promotion, a list of captured enemy pieces, and a timer.",
       picture: "../assets/Chess.png",
       link: "https://chess-2j02.onrender.com",
-      sourceCodeLink: "https://github.com/Vladocpro/Chess"
+      sourceCodeLink: "https://github.com/Vladocpro/Chess",
+      morePictures:"https://www.linkedin.com/in/vladocpro/overlay/1635521155840/single-media-viewer/?profileId=ACoAAD_P-pEBtvGvfaskcMVOKYb8gLXSOENDZxU"
    },
    discord: {
       title: "Discord",
-      description: "I created a Discord clone using MERN, RESTful API, WebSocket, WebRTC, Redux, and JWT auth. The Discord users are able to send invitations to each other with options to accept or decline the friendship request. It also updates the real-time friends' list and their online status, and enables them to create a room for a maximum of four people. Real-time communication is possible by messaging a friend and viewing the message history with dates, seeing friends' rooms, joining them, and communicating. Users who join somebody’s room can also share their screen, turn on/off their web camera, and microphone.",
+      description: "Developed Discord clone with all main functionality. Friendship invitations, real-time friend list online status update. Users can create a room of four people and see the rooms of others. Chatting with the message history. Meets with screen sharing capabilities, along with the flexibility to control the activation and deactivation of web cameras and microphones.Technologies: React, Node, Express, MongoDB, WebSockets, WebRTC, Redux.",
       picture: "../assets/Discord.png",
-      sourceCodeLink: "https://github.com/Vladocpro/Discord"
+      sourceCodeLink: "https://github.com/Vladocpro/Discord",
+      morePictures:"https://www.linkedin.com/in/vladocpro/overlay/1635518438296/single-media-viewer/?profileId=ACoAAD_P-pEBtvGvfaskcMVOKYb8gLXSOENDZxU"
    },
    blog: {
       title: "Blog",
       description: "Developed a simple Blog Project using React, Next, AWS Amplify, GraphQL. User can create, edit, post, write a comment. Upload a picture to the post using Amazon Web Services (AWS) Storage, enabling real-time posts updates through AWS Subscription. Utilizing AWS Authentication for Authentication.",
       picture: "../assets/BlogAWS.png",
-      sourceCodeLink: "https://github.com/Vladocpro/BlogAWS"
+      sourceCodeLink: "https://github.com/Vladocpro/BlogAWS",
+      morePictures:"https://www.linkedin.com/in/vladocpro/details/featured/1635518434974/single-media-viewer/?profileId=ACoAAD_P-pEBtvGvfaskcMVOKYb8gLXSOENDZxU"
    }
 }
 
@@ -89,8 +100,8 @@ function App() {
     <div className="bg-[#F5F5F7]">
 
      <header className="h-12 lg:h-20 w-full text-black flex items-center justify-center space-x-5">
-        <a className="navBtn" href={"https://www.linkedin.com/in/vladocpro/"}>LinkedIn</a>
-        <a className="navBtn" href={"https://github.com/Vladocpro"}>Github</a>
+        <a className="navBtn" href={"https://www.linkedin.com/in/vladocpro/"} rel="noreferrer noopener" target="_blank">LinkedIn</a>
+        <a className="navBtn" href={"https://github.com/Vladocpro"} rel="noreferrer noopener" target="_blank">Github</a>
         <a className="navBtn" href={"../assets/Vladyslav Ovcharenko Resume.pdf"} download> CV</a>
      </header>
 
@@ -111,8 +122,8 @@ function App() {
                        .pauseFor(1500)
 
                 }}/>
-            <p className="mt-2 md:mt-3 flex-wrap text-xs md:text-base lg:text-lg">
-               I’m keen on web development, like learning and implementing new technologies. I would like to develop complex web applications as well as UI/UX-focused projects.
+            <p className="mt-2 md:mt-3 text-justify flex-wrap text-xs md:text-base lg:text-lg">
+               3 years of continuous experience in Fullstack software development: building both backend and frontend with Typescript for a wide range of web projects of different scales and domains such as e-commerce, fintech, rental applications, games, media, etc. Focused on being a valuable part of any team I am on.
             </p>
 
          </div>
@@ -131,7 +142,7 @@ function App() {
 
          <div className="text-center mt-2 md:mt-6 lg:mt-9 text-lg md:text-3xl lg:text-4xl">
             <h1 className="mb-3">Projects</h1>
-            <div className="mt-5">
+            <div className="mt-5 pb-3">
 
                <Carousel
                    responsive={responsive}
@@ -148,6 +159,7 @@ function App() {
                    dotListClass="custom-dot-list-style"
                    itemClass="carousel-item-padding-40-px"
                >
+                  <SliderItem props={projects.ecommerce} />
                   <SliderItem props={projects.chess} />
                   <SliderItem props={projects.spotify} />
                   <SliderItem props={projects.discord} />
