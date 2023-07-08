@@ -29,6 +29,7 @@ const projects = {
       title: "Ecommerce Nike",
       description: "Developed Ecommerce store, with Nike's fully responsive and interactive design, Stripe payments, User and Google authentications, Product Filtering. Favorites and Cart functionality, listing ordered products. Technologies: React, Next 13, Typescript, Prisma, Stripe, Webhook, Redux, Tailwind, Cloudinary, NextAuth(google).",
       picture: "../assets/Ecommerce.jpg",
+      link: "https://ecom-nike.vercel.app",
       sourceCodeLink: "https://github.com/Vladocpro/ecommerce_nike",
       morePictures:"https://www.linkedin.com/in/vladocpro/overlay/1635531340088/single-media-viewer/?profileId=ACoAAD_P-pEBtvGvfaskcMVOKYb8gLXSOENDZxU"
    },
