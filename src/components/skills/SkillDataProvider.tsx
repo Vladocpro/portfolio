@@ -1,14 +1,16 @@
 import React, {useMemo} from 'react';
 import {motion} from "framer-motion";
+import Tooltip from "../Tooltip";
 
 interface Props {
    src: string;
+   name: string;
    index: number;
    inView: boolean;
    isMobile: boolean;
 }
 
-const SkillDataProvider = ({ src, index, inView, isMobile} : Props) => {
+const SkillDataProvider = ({ src, name, index, inView, isMobile} : Props) => {
 
    const imageVariants = {
       hidden: {opacity: 0},
@@ -29,19 +31,21 @@ const SkillDataProvider = ({ src, index, inView, isMobile} : Props) => {
 
 
    return (
-       <motion.div
-           initial="hidden"
-           variants={imageVariants}
-           animate={inView ? "visible" : "hidden"}
-           custom={index}
-           transition={{delay: animationDelay}}
-       >
-          <img
-              src={src}
-              className="w-[56px] h-[56px] sm:w-[55px] sm:h-[55px] md:w-[65px] md:h-[65px] lg:w-[80px] lg:h-[80px] object-contain"
-              alt='skill image'
-          />
-       </motion.div>
+          <motion.div
+              initial="hidden"
+              variants={imageVariants}
+              animate={inView ? "visible" : "hidden"}
+              custom={index}
+              transition={{delay: animationDelay}}
+          >
+             <Tooltip text={name} placement={"top"}>
+                <img
+                    src={src}
+                    className="w-[56px] h-[56px] sm:w-[55px] sm:h-[55px] md:w-[65px] md:h-[65px] lg:w-[80px] lg:h-[80px] object-contain"
+                    alt='skill image'
+                />
+             </Tooltip>
+          </motion.div>
    )
 }
 

@@ -5,8 +5,8 @@ import Carousel from "react-multi-carousel";
 import SliderItem from "../carousel/SliderItem";
 import {getProjectData, projects, responsiveCarousel} from "../../constants";
 import CustomDots from "../carousel/CustomDots";
-import ProjectModal from "./ProjectModal";
 import useProjectData from "../../zustand/ProjectInfo";
+import {useAnimate} from "framer-motion";
 
 
 
@@ -15,7 +15,13 @@ const Projects = () => {
    const {ref, inView} = useInView()
    const {setActiveSection} = useActiveSection();
    const projectData = useProjectData()
+   const [scope, animate] = useAnimate()
 
+   const changeSlide = async (currentSlide: number) => {
+      await animate("#projectInfo",{x: 7, opacity: 0})
+      projectData.setProjectData(getProjectData(currentSlide))
+      await animate("#projectInfo",{x: 0, opacity: 100})
+   }
 
    useEffect(() => {
       if(inView) {
@@ -31,12 +37,14 @@ const Projects = () => {
           <div className="flex flex-col h-full" ref={ref}>
 
              {/* Project Info */}
-             <div className={`flex flex-col mt-6 mx-1 px-3 lg:h-[194px] py-2 rounded-md shadow-all-lg shadow-gray-400 transition-all duration-500 ${inView ? "delay-[125ms] translate-y-0 opacity-100" : "translate-y-1/2 opacity-0"}`}>
-                <span className="font-medium sm:text-lg mb-1">{projectData.title}</span>
-                <span className="font-medium text-sm text-justify">{projectData.description}</span>
+             <div ref={scope} className={`flex flex-col mt-6 mx-1 px-3 lg:h-[194px] py-2 rounded-md shadow-all-lg shadow-gray-400 transition-all duration-500 ${inView ? "delay-[125ms] translate-y-0 opacity-100" : "translate-y-1/2 opacity-0"}`}>
+                <div className="flex flex-col" id={"projectInfo"}>
+                   <span className="font-medium sm:text-lg mb-1">{projectData.title}</span>
+                   <span className="font-medium text-sm text-justify">{projectData.description}</span>
+                </div>
                 <div className="flex justify-between items-center">
                    <div className={`flex gap-0.5 ${projectData.demoAccount ? "mt-0" : "mt-3"}`}>
-                      <a href={projectData.github} rel="noreferrer noopener" target="_blank">
+                   <a href={projectData.github} rel="noreferrer noopener" target="_blank">
                          <svg xmlns="http://www.w3.org/2000/svg"
                               className={`w-[35px] sm:w-[40px] cursor-pointer stroke-white transition-all duration-200 hover:fill-gray-500 hover:scale-110`}
                               viewBox="0 0 24 24"
@@ -84,7 +92,7 @@ const Projects = () => {
                 <Carousel
                     responsive={responsiveCarousel}
                     afterChange={((previousSlide, { currentSlide}) => {
-                       projectData.setProjectData(getProjectData(currentSlide))
+                       changeSlide(currentSlide)
                     })}
                     swipeable={true}
                     draggable={true}
@@ -106,7 +114,6 @@ const Projects = () => {
                 </Carousel>
              </div>
           </div>
-          <ProjectModal/>
        </div>
    );
 };

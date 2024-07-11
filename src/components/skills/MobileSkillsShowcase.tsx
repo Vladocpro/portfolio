@@ -10,10 +10,11 @@ const MobileSkillsShowcase = ({ inView}: Props) => {
    return (
        <>
           <div className="grid sm:hidden grid-cols-4 grid-rows-1 justify-around mt-4 gap-5 items-center">
-             {skillImages.slice(0, 4).map((image, index) => (
+             {skillImages.slice(0, 4).map((technology, index) => (
                  <SkillDataProvider
                      key={index}
-                     src={image}
+                     src={technology.src}
+                     name={technology.name}
                      index={index}
                      inView={inView}
                      isMobile={true}
@@ -21,10 +22,11 @@ const MobileSkillsShowcase = ({ inView}: Props) => {
              ))}
           </div>
           <div className="grid sm:hidden grid-cols-4 grid-rows-1 justify-around mt-4 gap-5 items-center">
-             {skillImages.slice(4, 8).map((image, index) => (
+             {skillImages.slice(4, 8).map((technology, index) => (
                  <SkillDataProvider
                      key={index}
-                     src={image}
+                     src={technology.src}
+                     name={technology.name}
                      index={index}
                      inView={inView}
                      isMobile={true}
@@ -32,10 +34,11 @@ const MobileSkillsShowcase = ({ inView}: Props) => {
              ))}
           </div>
           <div className="grid sm:hidden grid-cols-4 grid-rows-1 justify-around mt-4 gap-5 items-center">
-             {skillImages.slice(8, 12).map((image, index) => (
+             {skillImages.slice(8, 12).map((technology, index) => (
                  <SkillDataProvider
                      key={index}
-                     src={image}
+                     src={technology.src}
+                     name={technology.name}
                      index={index}
                      inView={inView}
                      isMobile={true}
@@ -43,10 +46,11 @@ const MobileSkillsShowcase = ({ inView}: Props) => {
              ))}
           </div>
           <div className="grid sm:hidden grid-cols-4 grid-rows-1 justify-around mt-4 gap-5 items-center">
-             {skillImages.slice(12, 16).map((image, index) => (
+             {skillImages.slice(12, 16).map((technology, index) => (
                  <SkillDataProvider
                      key={index}
-                     src={image}
+                     src={technology.src}
+                     name={technology.name}
                      index={index}
                      inView={inView}
                      isMobile={true}
@@ -54,10 +58,11 @@ const MobileSkillsShowcase = ({ inView}: Props) => {
              ))}
           </div>
           <div className="grid sm:hidden grid-cols-4 grid-rows-1 justify-around mt-4 gap-5 items-center">
-             {skillImages.slice(16, 20).map((image, index) => (
+             {skillImages.slice(16, 20).map((technology, index) => (
                  <SkillDataProvider
                      key={index}
-                     src={image}
+                     src={technology.src}
+                     name={technology.name}
                      index={index}
                      inView={inView}
                      isMobile={true}
@@ -65,10 +70,11 @@ const MobileSkillsShowcase = ({ inView}: Props) => {
              ))}
           </div>
           <div className="grid sm:hidden grid-cols-4 grid-rows-1 justify-around mt-4 gap-5 items-center">
-             {skillImages.slice(20, 24).map((image, index) => (
+             {skillImages.slice(20, 24).map((technology, index) => (
                  <SkillDataProvider
                      key={index}
-                     src={image}
+                     src={technology.src}
+                     name={technology.name}
                      index={index}
                      inView={inView}
                      isMobile={true}

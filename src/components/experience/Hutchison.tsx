@@ -8,7 +8,7 @@ interface Props {
 
 const Hutchison = ({inView}: Props) => {
    return (
-       <div>
+       <div className={`lg:rounded-lg lg:p-5 transition-all duration-1000  ${inView ? "delay-[125ms] lg:shadow-all-xl lg:shadow-gray-400" : "shadow-none"}`}>
           <div className="flex justify-between">
              <div className={`flex flex-col text-sm sm:text-base font-ptSerif transition-all duration-500 ${inView ? "delay-[125ms] opacity-100" : "opacity-0"}`}>
                 <span>Hutchison Technologies</span>

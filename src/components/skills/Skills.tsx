@@ -28,7 +28,7 @@ const Skills = () => {
 
           {/* Desktop skills showcase */}
           <div
-              className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden  shadow-all-xl shadow-gray-400 rounded-xl"
+              className={`flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden  rounded-xl transition-all duration-1000  ${inView ? "delay-[125ms] shadow-all-xl lg:shadow-gray-400" : "shadow-none"}`}
               style={{transform: "scale(0.9)"}}
               ref={ref}
           >
