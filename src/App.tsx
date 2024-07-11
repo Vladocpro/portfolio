@@ -11,12 +11,10 @@ import Header from "./components/header/Header";
 
 function App() {
 
-
-
   return (
     <div className="bg-[#181818] text-white w-full flex flex-col items-center">
        <Header/>
-      <Navbar/>
+       <Navbar/>
        <div className="flex flex-col w-full max-w-[440px]  sm:max-w-[630px] md:max-w-[760px] lg:max-w-[1000px] px-2">
           <About/>
           <Skills/>
