@@ -16,10 +16,10 @@ const Burger = () => {
 
 
           <div
-              className={`absolute z-10 inset-0 transition-all duration-300 h-screen w-screen opacity-[45%] ${burgerVisible ? "visible" : "invisible opacity-0"}`}
+              className={`absolute z-10 inset-0 transition-all duration-300 h-[100dvh] w-screen opacity-[45%] ${burgerVisible ? "visible" : "invisible opacity-0"}`}
               onClick={() => setBurgerVisible(!burgerVisible)}/>
           <div
-              className={`fixed z-10 right-0 top-0 h-screen   transition-all duration-300 opacity-100 bg-[#181818] ${burgerVisible ? "w-screen visible" : "invisible"} h-full w-[0] space-y-1.5 `}>
+              className={`fixed z-10 right-0 top-0 h-[100dvh] transition-all duration-300 opacity-100 bg-[#181818] ${burgerVisible ? "w-screen visible" : "invisible"} h-full w-[0] space-y-1.5 `}>
              <div className="flex flex-col ml-10 mr-10 h-full text-left overflow-hidden bg-[#181818] text-2xl mt-12">
 
                 <span className={'font-semibold text-center'}>Main Menu</span>

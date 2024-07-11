@@ -16,7 +16,7 @@ const About = () => {
    }, [inView]);
 
    return (
-       <div className="h-screen w-full flex flex-col justify-center items-center snap-start scroll-smooth" id="about">
+       <div className="h-[100dvh] w-full flex flex-col justify-center items-center snap-start scroll-smooth" id="about">
           <div className="flex flex-col-reverse sm:flex-row  justify-center items-center gap-10 mt-5" ref={ref}>
 
              {/* About me */}

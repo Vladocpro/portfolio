@@ -24,7 +24,7 @@ const Projects = () => {
    }, [inView]);
 
    return (
-       <div className="h-screen snap-start pt-5 xl:pt-0" id="projects">
+       <div className="h-[100dvh] snap-start pt-5 xl:pt-0" id="projects">
           <div
               className={`text-2xl font-medium mt-10 text-center w-full transition-all duration-500 ${inView ? "delay-[125ms] translate-y-0 opacity-100" : "translate-y-40 opacity-0"}`}
               >Projects</div>

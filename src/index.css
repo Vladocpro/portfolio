@@ -30,6 +30,7 @@ body {
   scroll-snap-stop: always;
   -webkit-scroll-snap-type: y mandatory;
   -ms-scroll-snap-type: mandatory;
+  scroll-padding-top: 10px;
 }
 
 html {
@@ -51,10 +52,18 @@ html {
   -ms-writing-mode: tb-rl;
 }
 
-::-webkit-scrollbar{
-  width: 8px;
-  border-radius: 20px;
 
+
+::-webkit-scrollbar{
+  width: 9px;
+  border-radius: 20px;
+}
+
+@media (max-width: 500px) {
+  ::-webkit-scrollbar{
+    width: 1px;
+    border-radius: 20px;
+  }
 }
 
 /*Track*/

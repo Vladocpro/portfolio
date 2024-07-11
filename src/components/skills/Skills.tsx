@@ -19,7 +19,7 @@ const Skills = () => {
    }, [inView]);
 
    return (
-       <div className="h-screen flex flex-col snap-start scroll-smooth pt-5 xl:pt-0" id="skills">
+       <div className="h-[100dvh] flex flex-col snap-start scroll-smooth pt-5 xl:pt-0" id="skills">
 
           <div className="flex justify-center mt-10">
              <span
