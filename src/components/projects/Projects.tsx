@@ -40,7 +40,7 @@ const Projects = () => {
              <div ref={scope} className={`flex flex-col mt-6 mx-1 px-3 lg:h-[194px] py-2 rounded-md shadow-all-lg shadow-gray-400 transition-all duration-500 ${inView ? "delay-[125ms] translate-y-0 opacity-100" : "translate-y-1/2 opacity-0"}`}>
                 <div className="flex flex-col" id={"projectInfo"}>
                    <span className="font-medium sm:text-lg mb-1">{projectData.title}</span>
-                   <span className="font-medium text-sm text-justify">{projectData.description}</span>
+                   <span className="font-medium text-sm sm:text-base text-justify">{projectData.description}</span>
                 </div>
                 <div className="flex justify-between items-center">
                    <div className={`flex gap-0.5 ${projectData.demoAccount ? "mt-0" : "mt-3"}`}>
