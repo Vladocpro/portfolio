@@ -43,7 +43,7 @@ const Svg:FC<svgProps> = ({icon, color, size}) => {
       }
       case "cv": {
          return (
-             <a href={"../assets/Vladyslav Ovcharenko CV.docx"} download>
+             <a href={"../assets/Vladyslav Ovcharenko CV.pdf"} target="_blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg" viewBox="-4.25 -4.25 32 32"
                     className={`${size} cursor-pointer stroke-white transition-all duration-200 hover:stroke-gray-500 hover:scale-110`}
