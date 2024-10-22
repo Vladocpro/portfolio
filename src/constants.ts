@@ -11,7 +11,7 @@ export const skillImages = [
    { src: '../assets/expressjs.svg', name: 'Express.js' },
    { src: '../assets/sql.png', name: 'SQL' },
    { src: '../assets/node-js.png', name: 'Node.js' },
-   { src: '../assets/mui.png', name: 'Material UI' },
+   { src: '../assets/cSharp.png', name: 'C#' },
    { src: '../assets/framer.png', name: 'Framer Motion' },
    { src: '../assets/stripe.png', name: 'Stripe' },
    { src: '../assets/vite.svg', name: 'Vite' },
